@@ -1,7 +1,8 @@
+package desafioSerVivo.SerVivo;
 
-public class PlantaeFamilia extends {
+public class PlantaeFamilia {
 	
-	private String familia;
+	private String ordem;
 	
 	public String getOrdem() {
 		return ordem;
