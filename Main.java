@@ -35,21 +35,21 @@ public class Main {
 					listaAnimalia.cadastraSer(1);
 					break;
 				
-//				case "fungi":
-//					listaFungi.cadastraSer(2);
-//					break;
+				case "fungi":
+					listaFungi.cadastraSer(2);
+					break;
 					
 				case "plantae":
 					listaPlantae.cadastraSer(3);
 					break;
 					
-//				case "monera":
-//					listaMonera.cadastraSer(4);
-//					break;
-//					
-//				case "protista":
-//					listaProtista.cadastraSer(5);
-//					break;
+				case "monera":
+					listaMonera.cadastraSer(4);
+					break;
+					
+				case "protista":
+					listaProtista.cadastraSer(5);
+					break;
 					
 				
 				default:
