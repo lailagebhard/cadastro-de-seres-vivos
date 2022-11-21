@@ -60,7 +60,7 @@ public class Main {
 					
 				} else if (mainMenu == 2) {
 					String mostrar;
-					System.out.println("Digite a o Reino Desejado: Animalia, Fungi, Plantae, Monera, Protista, Todos");
+					System.out.println("Digite a o Reino desejado: Animalia / Fungi / Plantae / Monera / Protista / Todos");
 					mostrar = scan.next();
 					if(mostrar.equalsIgnoreCase("animalia")) {
 						listaAnimalia.mostraSeres(1);

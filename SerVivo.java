@@ -36,13 +36,13 @@ public class SerVivo {
 		System.out.println("Ordem: ");
 		ordem = scan.next();
 	
-		System.out.println("Familia: ");
+		System.out.println("Família: ");
 		familia = scan.next();
 	
-		System.out.println("Genero: ");
+		System.out.println("Gênero: ");
 		genero = scan.next();
 		
-		System.out.println("Especie: ");		
+		System.out.println("Espécie: ");		
 		especie = scan.next();
 	}
 	
