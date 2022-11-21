@@ -19,7 +19,7 @@ public class Main {
 		
 		
 		
-		while(flag ) {
+		while(flag) {
 			
 			System.out.println("\nO que deseja fazer?");
 			System.out.println("[1]-Cadastrar novo ser vivo \n[2]-Ver listas \n[3]-Sair\n");
