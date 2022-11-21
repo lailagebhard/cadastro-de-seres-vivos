@@ -16,7 +16,7 @@ public class SerVivo {
 	
 	
 	ArrayList<AnimaliaEspecie> listaAnimalia = new ArrayList<>();
-	//ArrayList<FungiEspecie> listaFungi = new ArrayList<>();
+	ArrayList<FungiEspecie> listaFungi = new ArrayList<>();
 	ArrayList<PlantaeEspecie> listaPlantae = new ArrayList<>();
 	ArrayList<MoneraEspecie> listaMonera = new ArrayList<>();
 	ArrayList<ProtistaEspecie> listaProtista = new ArrayList<>();
@@ -66,16 +66,16 @@ public class SerVivo {
 			this.listaAnimalia.get(listaAnimalia.size()-1).setEspecie(especie);
 			break;
 		
-		//case 2:
-			//this.entradaDados();
-			//listaFungi.add(new FungiEspecie());
-			//this.listaFungi.get(listaFungi.size()-1).setFilo(filo);
-			//this.listaFungi.get(listaFungi.size()-1).setClasse(classe);
-			//this.listaFungi.get(listaFungi.size()-1).setOrdem(ordem);
-			//this.listaFungi.get(listaFungi.size()-1).setFamilia(familia);
-			//this.listaFungi.get(listaFungi.size()-1).setGenero(genero);
-			//this.listaFungi.get(listaFungi.size()-1).setEspecie(especie);
-			//break;
+		case 2:
+			this.entradaDados();
+			listaFungi.add(new FungiEspecie());
+			this.listaFungi.get(listaFungi.size()-1).setFilo(filo);
+			this.listaFungi.get(listaFungi.size()-1).setClasse(classe);
+			this.listaFungi.get(listaFungi.size()-1).setOrdem(ordem);
+			this.listaFungi.get(listaFungi.size()-1).setFamilia(familia);
+			this.listaFungi.get(listaFungi.size()-1).setGenero(genero);
+			this.listaFungi.get(listaFungi.size()-1).setEspecie(especie);
+			break;
 		
 		case 3:
 			this.entradaDados();
@@ -116,6 +116,7 @@ public class SerVivo {
 
 	public void mostraSeres(int reino) {
 		switch (reino) {
+	
 		case 1:
 			for (int i = 0; i < listaAnimalia.size(); i++) {
 				System.out.println("--===--===--===--===--");

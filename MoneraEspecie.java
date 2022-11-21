@@ -7,7 +7,7 @@ public class MoneraEspecie extends MoneraGenero{
 		return especie;
 	}
 
-	public void setEspecieMonera(String especie) {
+	public void setEspecie(String especie) {
 		this.especie = especie;
 	}
 }

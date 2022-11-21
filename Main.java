@@ -9,8 +9,9 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		boolean flag = true;
 		int mainMenu;
-		String vivosMenu;
 		
+		String vivosMenu;
+		SerVivo cadastro = new SerVivo();
 		SerVivo listaAnimalia = new SerVivo();
 		SerVivo listaFungi = new SerVivo();
 		SerVivo listaPlantae = new SerVivo();
@@ -31,45 +32,62 @@ public class Main {
 				
 				switch(vivosMenu.toLowerCase()) {
 				
-				case "animalia":
+				case "animalia":{
 					listaAnimalia.cadastraSer(1);
-					break;
+					break;}
 				
-				case "fungi":
+				case "fungi":{
 					listaFungi.cadastraSer(2);
-					break;
+					break;}
 					
-				case "plantae":
+				case "plantae":{
 					listaPlantae.cadastraSer(3);
-					break;
+					break;}
 					
-				case "monera":
+				case "monera":{
 					listaMonera.cadastraSer(4);
-					break;
+					break;}
 					
-				case "protista":
+				case "protista":{
 					listaProtista.cadastraSer(5);
-					break;
+					break;}
 					
 				
-				default:
+				default:{
 					System.out.println("Reino inválido.");
-					break;
+					break;}
 			
 				} 
 					
 				} else if (mainMenu == 2) {
-					System.out.println("Cadastros Animalia:");
-					listaAnimalia.mostraSeres(1);
-					System.out.println("\nCadastros Fungi:");
-					listaFungi.mostraSeres(2);
-					System.out.println("\nCadastros Plantae:");
-					listaPlantae.mostraSeres(3);
-					System.out.println("\nCadastros Monera:");
-					listaMonera.mostraSeres(4);
-					System.out.println("\nCadastros Protista:");
-					listaProtista.mostraSeres(5);
-					
+					String mostrar;
+					System.out.println("Digite a o Reino Desejado: Animalia, Fungi, Plantae, Monera, Protista, Todos");
+					mostrar = scan.next();
+					if(mostrar.equalsIgnoreCase("animalia")) {
+						listaAnimalia.mostraSeres(1);
+					}else if(mostrar.equalsIgnoreCase("fungi")) {						
+						listaFungi.mostraSeres(2);
+					}else if(mostrar.equalsIgnoreCase("plantae")){
+						listaPlantae.mostraSeres(3);
+					}else if(mostrar.equalsIgnoreCase("monera")) {
+						listaMonera.mostraSeres(4);
+					}else if(mostrar.equalsIgnoreCase("protista")){
+						listaProtista.mostraSeres(5);
+					}else if(mostrar.equalsIgnoreCase("Todos")){
+						System.out.println("Animalia:");
+						listaAnimalia.mostraSeres(1);
+						System.out.println("\nFungi:");
+						listaFungi.mostraSeres(2);
+						System.out.println("\nPlantae:");
+						listaPlantae.mostraSeres(3);
+						System.out.println("\nMonera:");
+						listaMonera.mostraSeres(4);
+						System.out.println("\nProtista:");
+						listaProtista.mostraSeres(5);
+					}else {
+						System.out.println("Digite o reino correto");
+					}
+
 				} else if (mainMenu == 3) {
 					System.out.println("Programa encerrado");
 					flag = false;
@@ -77,12 +95,19 @@ public class Main {
 				} else {
 					System.out.println("Opção inválida.");
 				}
-			
-			
 		}
 		
 		
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

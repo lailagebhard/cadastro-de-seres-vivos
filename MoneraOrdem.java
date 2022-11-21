@@ -11,5 +11,4 @@ public class MoneraOrdem extends MoneraClasse{
 		this.ordem = ordem;
 	}
 	
-	
 }

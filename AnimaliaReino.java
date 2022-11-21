@@ -1,6 +1,5 @@
 package desafioSerVivo.SerVivo;
 
-import java.util.ArrayList;
 
 public class AnimaliaReino extends SerVivo{
 	
