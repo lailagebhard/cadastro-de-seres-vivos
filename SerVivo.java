@@ -26,12 +26,6 @@ public class SerVivo {
 		super();
 	}
 	
-	public void Menu() {
-		System.out.println("O que deseja fazer?");
-		System.out.println("[1]-Cadastrar novo ser vivo \n[2]-Ver seres cadastrados \n[3]-Sair");
-		mainMenu = scan.nextInt();
-	}
-	
 	public void entradaDados() {
 		System.out.println("Filo: ");
 		filo = scan.next();
