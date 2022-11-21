@@ -1,15 +1,14 @@
 package desafioSerVivo.SerVivo;
 
-public class ProtistaClasse extends ProtistaEspecie{
-		private String protistaClasse;
+public class ProtistaClasse extends ProtistaFilo{
+	private String classe;
 
-		public String getProtistaClasse() {
-			return protistaClasse;
-		}
+	public String getClasse() {
+		return classe;
+	}
 
-		public void setProtistaClasse(String protistaClasse) {
-			this.protistaClasse = protistaClasse;
-		}
-		
-		
+	public void setClasse(String classe) {
+		this.classe = classe;
+	}
+	
 }

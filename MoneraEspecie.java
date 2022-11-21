@@ -1,15 +1,13 @@
 package desafioSerVivo.SerVivo;
 
-public class MoneraEspecie extends MoneraFamilia{
-	private String especieMonera;
+public class MoneraEspecie extends MoneraGenero{
+	private String especie;
 
-	public String getEspecieMonera() {
-		return especieMonera;
+	public String getEspecie() {
+		return especie;
 	}
 
-	public void setEspecieMonera(String especieMonera) {
-		this.especieMonera = especieMonera;
+	public void setEspecieMonera(String especie) {
+		this.especie = especie;
 	}
-	
-	
 }

@@ -1,6 +1,6 @@
 package desafioSerVivo.SerVivo;
 
-public class MoneraFamilia extends MoneraReino{
+public class MoneraFamilia extends MoneraOrdem{
 	private String familia;
 
 	public String getFamilia() {
@@ -10,7 +10,4 @@ public class MoneraFamilia extends MoneraReino{
 	public void setFamilia(String familia) {
 		this.familia = familia;
 	}
-	
-	
-	
 }

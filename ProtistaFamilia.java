@@ -1,14 +1,14 @@
 package desafioSerVivo.SerVivo;
 
-public class ProtistaFamilia extends ProtistaFilo {
-	private String protistaFamilia;
+public class ProtistaFamilia extends ProtistaOrdem{
+	private String Familia;
 
-	public String getProtistaFamilia() {
-		return protistaFamilia;
+	public String getFamilia() {
+		return Familia;
 	}
 
-	public void setProtistaFamilia(String protistaFamilia) {
-		this.protistaFamilia = protistaFamilia;
+	public void setFamilia(String familia) {
+		Familia = familia;
 	}
 	
 }
