@@ -11,7 +11,6 @@ public class Main {
 		int mainMenu;
 		
 		String vivosMenu;
-		SerVivo cadastro = new SerVivo();
 		SerVivo listaAnimalia = new SerVivo();
 		SerVivo listaFungi = new SerVivo();
 		SerVivo listaPlantae = new SerVivo();
